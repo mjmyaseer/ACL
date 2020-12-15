@@ -41,6 +41,8 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+$app->register(\Manager\Data\Repositories\RepositoryServiceProvider::class);
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application

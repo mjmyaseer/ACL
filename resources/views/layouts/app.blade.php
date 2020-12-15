@@ -49,8 +49,13 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         <li><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="{{ url('/') }}">Store</a></li>
                         @if (!Auth::guest())
-                            <li><a href="{{ route('posts.create') }}">New Article</a></li>
+                            <li><a href="{{ route('posts.create') }}">New Store</a></li>
+                            <li><a href="{{ url('users') }}">Users</a></li>
+                            <li><a href="{{ url('roles') }}">Roles</a></li>
+                            <li><a href="{{ url('permissions') }}">Permissions</a></li>
+                            
                          @endif
                     </ul>
 
